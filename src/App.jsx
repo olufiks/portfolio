@@ -20,7 +20,7 @@ function App() {
       <div className="hero-content">
         <h1>Hi! I'm Olufikayo!</h1>
         <p>I am a growing developer, learning everyday!</p>
-        <button className="hero-btn">Check out my work</button>
+        <a href="#work" className="hero-btn">Check out my work</a>
       </div>
     </div>
 
