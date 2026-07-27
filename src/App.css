@@ -276,13 +276,18 @@ header a:hover {
 
 @media (max-width: 768px) {
   header {
-    flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.2rem;
     padding: 1rem 1.5rem;
+    overflow-x: auto;
+  }
+
+  header h1 {
+    font-size: 1rem;
   }
 
   header a {
     font-size: 0.85rem;
+    white-space: nowrap;
   }
 
   .hero-container {
@@ -307,7 +312,6 @@ header a:hover {
   }
 
   #about {
-    flex-direction: column;
     gap: 2rem;
   }
 
@@ -316,7 +320,7 @@ header a:hover {
   }
 
   .about-image {
-    max-width: 100%;
+    max-width: 200px;
   }
 
   .skills-grid {
