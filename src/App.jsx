@@ -6,10 +6,10 @@ function App() {
     <>
     <header>
       <h1>olufikayo | portfolio</h1>
-      <h2>about</h2>
-      <h2>skills</h2>
-      <h2>my work</h2>
-      <h2>contact</h2>
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#work">my work</a>
+      <a href="#contact">contact</a>
     </header>
     <div className="hero-container">
       <img 
