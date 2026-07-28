@@ -10,6 +10,28 @@ body {
   font-family: "SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(24, 69, 57, 0.25);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(24, 69, 57, 0.45);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(24, 69, 57, 0.25) transparent;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -276,14 +298,18 @@ header a:hover {
 
 @media (max-width: 768px) {
   header {
-    gap: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem 1.5rem;
     padding: 1rem 1.5rem;
-    overflow-x: auto;
   }
 
   header h1 {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
   }
 
   header a {
@@ -313,7 +339,13 @@ header a:hover {
   }
 
   #about {
-    gap: 2rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .about-content {
+    width: 100%;
   }
 
   .about-content h2 {
@@ -321,7 +353,9 @@ header a:hover {
   }
 
   .about-image {
-    max-width: 200px;
+    max-width: 120px;
+    border-radius: 12px;
+    align-self: flex-start;
   }
 
   .skills-grid {
