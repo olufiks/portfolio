@@ -124,6 +124,25 @@ function App() {
             View Live →
           </a>
         </div>
+        <div className="work-card">
+          <h3>Countdown Timer</h3>
+          <p>A countdown timer app to track time to your next deadline.</p>
+          <div className="work-preview">
+            <iframe
+              src="https://timer-countdown-psi.vercel.app/"
+              title="Countdown Timer Preview"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <a
+            href="https://timer-countdown-psi.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="work-link"
+          >
+            View Live →
+          </a>
+        </div>
       </div>
     </section>
 
